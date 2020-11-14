@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import 'tachyons';
 
 ReactDOM.render(
-  <App />, 
+    <App />, 
   document.getElementById('root')
 );
 
