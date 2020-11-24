@@ -1,6 +1,6 @@
 {
   "name": "facerecognitionbrain",
-  "homepage": "https://github.com/khoaHyh/smart-brain",
+  "homepage": "https://smart-brain-khoahyh.herokuapp.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
