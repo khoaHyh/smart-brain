@@ -26,3 +26,4 @@ This app uses the <a href="https://www.clarifai.com/models/face-detection" targe
 
 ## Notes
   * The Clarifai API does not work with data/image(base64) types of images.
+  * This app is using the free services that Heroku provides. As such, the app gets unloaded from server memory when it is unused for a while. Functions such as signing in and register may take a while to update because of this. For more information, here is the [official note](https://devcenter.heroku.com/articles/dynos#dyno-sleeping).
