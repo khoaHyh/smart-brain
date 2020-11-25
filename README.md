@@ -2,10 +2,10 @@
   smart-brain
 </h1>
 <p align="center">
-  A Full-Stack Image Recognition App. Created for the "The Complete Web Developer in 2020: Zero to Mastery" course by Andrei Neagoie. Deployed on <a href="https://www.heroku.com/" target="_blank" rel="noopener noreferrer">Heroku</a>
+  A Full-Stack Image Recognition App. Created for the "The Complete Web Developer in 2020: Zero to Mastery" course by Andrei Neagoie. Deployed on <a href="https://www.heroku.com/" target="_blank" rel="noopener noreferrer">Heroku</a>.
 </p>
 <p align="center">
-This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create-React-App</a>
+This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create-React-App</a>.
 </p>
 
 ![demo](https://raw.githubusercontent.com/khoaHyh/smart-brain/master/src/images/smart-brain.png)
