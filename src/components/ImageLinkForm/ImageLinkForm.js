@@ -14,7 +14,7 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
         <div className='form center pa4 br3 shadow-5'>
           <input className='f4 pa2 w-70 center' type='text' onChange={onInputChange} placeholder="Enter image link" />
           <button 
-            className='w-30 grow f4 link ph3 pv2 dib white bg-light-purple'
+            className='w-30 f4 link ml2 ph3 pv2 dib black ba b--black br2 bg-white hover-bg-black bg-animate hover-white'
             onClick={onButtonSubmit}> 
             Detect
           </button>
