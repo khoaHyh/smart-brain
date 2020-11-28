@@ -6,7 +6,8 @@ class Register extends React.Component {
     this.state = {
       email: '',
       password: '',
-      name: ''
+      name: '',
+      emailError: ''
     }
   }
 
@@ -56,7 +57,9 @@ class Register extends React.Component {
       });
       const user = await response.json();
       try {
-        if (user.id) {
+        if (!this.state.email.includes("@")) {
+          this.setState({emailError: 'Invalid Email.'});
+        } else if (user.id) {
           this.props.loadUser(user)
           this.props.onRouteChange('home');
         }
@@ -88,6 +91,7 @@ class Register extends React.Component {
               </div>
               <div className="mt3">
                 <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
+                <label className="red">{this.state.emailError}</label>
                 <input 
                   className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
                   type="email" 

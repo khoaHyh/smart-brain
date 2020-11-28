@@ -53,10 +53,8 @@ class Signin extends React.Component {
         if (user.id) {
           this.props.loadUser(user);
           this.props.onRouteChange('home');
-        // display 'wrong credentials' on incorrect signin input
         } else {
           this.setState({wrongCredentials: 'Oops, wrong credentials.'});
-          console.log('fail signin');
         }
       } catch (err) {
         console.log('if statement err', err);
