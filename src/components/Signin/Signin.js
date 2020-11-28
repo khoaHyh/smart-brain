@@ -5,7 +5,8 @@ class Signin extends React.Component {
     super(props);
     this.state = {
       signInEmail: '',
-      signInPassword: ''
+      signInPassword: '',
+      wrongCredentials: ''
     }
   }
 
@@ -52,6 +53,10 @@ class Signin extends React.Component {
         if (user.id) {
           this.props.loadUser(user);
           this.props.onRouteChange('home');
+        // display 'wrong credentials' on incorrect signin input
+        } else {
+          this.setState({wrongCredentials: 'Oops, wrong credentials.'});
+          console.log('fail signin');
         }
       } catch (err) {
         console.log('if statement err', err);
@@ -70,6 +75,11 @@ class Signin extends React.Component {
           <div className="measure">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
               <legend className="f1 fw6 ph0 mh0">Sign In</legend>
+              {/* wrong credentials start */}
+              <div className="mt3">
+                <label className="red">{this.state.wrongCredentials}</label>
+              </div>
+              {/* wrong credentials end */}
               <div className="mt3">
                 <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
                 <input 
