@@ -136,7 +136,7 @@ class App extends Component {
         })
       });
       const response = await responsePost.json();
-      if (response !== 'unable to work with API') {
+      if (response !== 'unable to work with API' && response.outputs[0].data.hasOwnProperty('regions')) {
         try {
           const responsePut = await fetch('https://powerful-lowlands-92139.herokuapp.com/image', {
             method: 'put',
