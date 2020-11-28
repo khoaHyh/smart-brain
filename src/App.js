@@ -136,7 +136,7 @@ class App extends Component {
         })
       });
       const response = await responsePost.json();
-      if (!response.includes('unable to work with API')) {
+      if (response !== 'unable to work with API') {
         try {
           const responsePut = await fetch('https://powerful-lowlands-92139.herokuapp.com/image', {
             method: 'put',
